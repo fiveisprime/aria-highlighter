@@ -23,7 +23,7 @@
 (function (document) {
   'use strict';
   
-  var css = '[tabindex="0"]{background:yellow}[tabindex]:before{content:attr(tabindex);color:red;font-weight:bold}[role]{background:pink}[role]:before{content:attr(role); color:green;font-weight:bold}';
+  var css = '[tabindex=\'0\']{background:yellow}[tabindex]:before{content:attr(tabindex);color:red;font-weight:bold}[role]{background:pink}[role]:before{content:attr(role); color:green;font-weight:bold}';
   var styleElem = document.getElementById('a11y-css-highlight');
     
   if (styleElem) {

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ARIA Highlighter Bookmarklet</title>
+		<style type="text/css" media="screen">
+		  body{
+  		  font-family: Helvetica;
+		  }
+			.button {
+  			display: inline-block;
+        font-weight: bold;
+        color: white;
+        background-color: #626262;
+        border: 1px solid #626262;
+        padding: 6px;
+        min-width: 62px;
+        text-align: center;
+        vertical-align: 2px;
+        margin-top: 10px;
+        
+        -webkit-border-radius: 8px;
+        -moz-border-radius:    8px;
+        border-radius:         8px;
+        
+        -webkit-box-shadow: 0px 0px 5px black;
+        -moz-box-shadow:    0px 0px 5px black;
+        box-shadow:         0px 0px 5px black;
+			}
+			.arrow-box {
+      	position: relative;
+      	background: #88b7d5;
+      	border: 4px solid #c2e1f5;
+      	margin-top: 35px;
+      	width: 500px;
+      	text-align: center;
+      }
+      .arrow-box:after, .arrow-box:before {
+      	bottom: 100%;
+      	border: solid transparent;
+      	content: " ";
+      	height: 0;
+      	width: 0;
+      	position: absolute;
+      	pointer-events: none;
+      }
+      
+      .arrow-box:after {
+      	border-bottom-color: #88b7d5;
+      	border-width: 30px;
+      	left: 50%;
+      	margin-left: -30px;
+      }
+      .arrow-box:before {
+      	border-bottom-color: #c2e1f5;
+      	border-width: 36px;
+      	left: 50%;
+      	margin-left: -36px;
+      }\
+		</style>
+	</head>
+	<body>
+    <div class="arrow-box">
+  		<p><a href="javascript:(function(c){var a='[tabindex=\'0\']{background:yellow}[tabindex]:before{content:attr(tabindex);color:red;font-weight:bold}[role]{background:pink}[role]:before{content:attr(role);color:green;font-weight:bold}',b=c.getElementById('a11y-css-highlight');if(b){b.disabled=!b.disabled;}else{b=c.createElement('style');b.id='a11y-css-highlight';b.type='text/css';if(b.styleSheet){b.styleSheet.cssText=a;}else{b.appendChild(c.createTextNode(a));}c.getElementsByTagName('head')[0].appendChild(b);}})(document);" class="button">ARIA Highlighter</a></p>
+  		<p>Drag the bookmarklet to your bookmarks bar for great good!</p>
+  		<p><a href="http://github.com/fiveisprime/a11y-css-highlight">Check out the repo</a></p>
+	 </div>
+	</body>
+</html>
