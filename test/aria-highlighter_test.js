@@ -22,9 +22,9 @@
       raises(block, [expected], [message])
   */
 
-  module('a11y-css basic test', {
+  module('aria-highlighter basic test', {
     setup: function() {
-      this.styleElem = document.getElementById('a11y-css-highlight');
+      this.styleElem = document.getElementById('aria-highlighter');
     }
   });
 
