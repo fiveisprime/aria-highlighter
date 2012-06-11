@@ -5,6 +5,8 @@
   <style type="text/css" media="screen">
     body {
       font-family: Helvetica;
+      font-size: 14px;
+      text-align: center;
     }
     #test,
     footer,
@@ -28,6 +30,7 @@
   </style>
 </head>
 <body>
+  
   <a href="https://github.com/fiveisprime"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
   <div role="toolbar">
     <p><a href="javascript:document.getElementById('aria-highlighter').disabled = !document.getElementById('aria-highlighter').disabled;">Toggle ARIA Visibility</a></p>
@@ -39,6 +42,20 @@
     <textarea name="noindex">No tabindex here</textarea>
     <div role="tooltip"><p>This div has ARIA role "tooltip"</p></div>
   </article>
+  
+  <br/>
+  <p>A grid with roles of "grid", "gridrow", and "gridcell"</p>
+  <div role="grid">
+	  <div role="row">
+	    <div role="gridcell"></div>
+	  </div>
+	  <div role="row">
+	    <div role="gridcell"></div>
+	  </div>
+	  <div role="row">
+	    <div role="gridcell"></div>
+	  </div>
+	</div> <!-- grid -->
   
   <footer role="contentinfo">
     <p>This footer has ARIA role "contentinfo"</p>
