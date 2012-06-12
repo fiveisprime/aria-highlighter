@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>test</title>
+		<style type="text/css" media="screen">
+		  div {
+  		  display: inline-block;
+  		  width: 100px;
+  		  margin: 5px;
+		  }
+			[role=grid] {
+  			background-color: rgba(255,167,0,0.3);
+  			height: 300px;
+  			width: 500px;
+			}
+			[role=row] {
+  			border: 1px solid rgba(0,0,0,0.5);
+  			height: 100px;
+  			width: 500px;
+			}
+			[role=gridcell] {
+			 background-color: rgba(255,0,0,0.3);
+  			height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div role="grid">
+		  <div role="row">
+		    <div role="gridcell">C01R01</div>
+		    <div role="gridcell">C01R02</div>
+		  </div>
+		  <div role="row">
+		    <div role="gridcell">C02R01</div>
+		  </div>
+		  <div role="row">
+		    <div role="gridcell">C03R01</div>
+		  </div>
+		</div> <!-- grid -->
+	</body>
+</html>
