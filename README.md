@@ -6,3 +6,5 @@ The following items are highlighted/shown:
 * The ARIA role value will be placed before the element (in green)
 * Elements with the "row" role will be outlined
 * Elements wth the "gridcell" role will be highlighted light red
+
+Grab the bookmarlet [here](http://fiveisprime.github.com/aria-highlighter/).
