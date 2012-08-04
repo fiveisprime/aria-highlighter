@@ -13,8 +13,10 @@
   background:rgba(255,191,202,0.4)
 }
 [role]:before {
+  position: absolute;
   content:attr(role);
   color:green;
+  font-size: 25px;
   font-weight:bold
 }
 [role=grid] {
@@ -30,7 +32,7 @@
 */
 
 (function (document) {
-  var css = '[tabindex=0]{background:yellow}[tabindex]:before{content:attr(tabindex);color:red;font-weight:bold}[role]{background:rgba(255,191,202,0.4)}[role]:before{content:attr(role); color:green;font-weight:bold}[role=row]{border: 1px solid rgba(0,0,0,0.5);}[role=gridcell]{background-color:rgba(255,0,0,0.3);}';
+  var css = '[tabindex=0]{background:yellow}[tabindex]:before{content:attr(tabindex);color:red;font-weight:bold}[role]{background:rgba(255,191,202,0.4)}[role]:before{position:absolute;content:attr(role);color:green;font-size:25px;font-weight:bold}[role=row]{border: 1px solid rgba(0,0,0,0.5);}[role=gridcell]{background-color:rgba(255,0,0,0.3);}';
   var styleElem = document.getElementById('aria-highlighter');
     
   if (styleElem) {
